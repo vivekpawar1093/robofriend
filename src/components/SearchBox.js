@@ -1,8 +1,16 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 
-export default (props) => {
+const SearchBox = ({ searchfield, searchChange }) => {
   return (
-    <Button color="danger">Danger!</Button>
+    <div className='pa2'>
+      <input
+        className='pa3 ba b--green bg-lightest-blue'
+        type='search'
+        placeholder='search robots'
+        onChange={searchChange}
+      />
+    </div>
   );
-};
+}
+
+export default SearchBox;
